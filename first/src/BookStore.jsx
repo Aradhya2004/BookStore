@@ -7,8 +7,8 @@ function BookStore() {
   return (
     <div  className = "booklist">
     {
-      books.map((a)=>(
-        <Book data={a}/>
+      books.map((a, index)=>(
+        <Book data={a} key={index}/>
       ))
     }
        
