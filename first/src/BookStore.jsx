@@ -1,0 +1,20 @@
+import React from 'react'
+import Book from './Book'
+
+function BookStore() {
+  const books = [{ Author: "Ashneer Grover", title: "Doglapan", imgLink: "https://productimages.worldofbooks.com/067009711X.jpg" }, { Author: "Ashneer Grover", title: "Doglapan", imgLink: "https://productimages.worldofbooks.com/067009711X.jpg" }, { Author: "Ashneer Grover", title: "Doglapan", imgLink: "https://productimages.worldofbooks.com/067009711X.jpg" }, { Author: "Ashneer Grover", title: "Doglapan", imgLink: "https://productimages.worldofbooks.com/067009711X.jpg" }, { Author: "Ashneer Grover", title: "Doglapan", imgLink: "https://productimages.worldofbooks.com/067009711X.jpg" }, { Author: "Ashneer Grover", title: "Doglapan", imgLink: "https://productimages.worldofbooks.com/067009711X.jpg" }];
+  
+  return (
+    <div  className = "booklist">
+    {
+      books.map((a)=>(
+        <Book data={a}/>
+      ))
+    }
+       
+      {/* <Book {...book1} /> */}
+    </div>
+  )
+}
+
+export default BookStore
